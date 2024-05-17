@@ -899,7 +899,7 @@ section,
 }
 
 .requests-new .php-email-form button[type=submit]:hover {
-  background: rgba(var(--accent-color-rgb), 0.8);
+  background: var(--accent-color);
 }
 
 
@@ -909,6 +909,15 @@ section,
 .features{
   background-color: #E4F0FF;
 }
+
+@media (max-width: 575px) {
+  .features .section-title h2 {
+      font-size: 24px;
+      font-weight: 700;
+      position: relative;
+  }
+}
+
 .features .features-item {
   color: rgba(var(--default-color-rgb), 0.8);
 }
